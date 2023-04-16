@@ -16,9 +16,9 @@
     />
   </head>
   <body>
-    <div class="grid grid-cols-12 grid-flow-col">
+    <div class="flex h-full">
       <header
-        class="bg-[#111418] sticky top-0 col-span-2 row-span-full z-10 h-full bg-fixed"
+        class="bg-[#111418] w-[550px] h-[800px] sticky top-0 col-span-2 row-span-full z-10 bg-fixed"
       >
         <nav>
           <div class="relative flex-col px-3 py-3">
@@ -28,10 +28,10 @@
                 class="rounded-full ring-8 ring-[#343a40] m-auto mt-10 w-[180px]"
                 alt="Personal Photo"
               />
-              <h1 class="text-2xl text-white font-semibold">Mohammad Maruf</h1>
+              <h1 class="text-xl text-white font-semibold">Mohammad Maruf</h1>
             </a>
             <div class="text-center text-white mt-7">
-              <ul class="space-y-5 text-xl font-normal">
+              <ul class="space-y-5 text-lg font-medium mt-10">
                 <li class="hover:text-[#20c997] transition">
                   <a href="/home">Home</a>
                 </li>
@@ -55,7 +55,7 @@
                 </li>
               </ul>
             </div>
-            <ul class="mt-10 flex justify-between px-14 text-[#aab1b8]">
+            <ul class="mt-20 flex justify-between px-14 gap-7 text-[#aab1b8]">
               <li class="hover:text-[#3b5998] transition">
                 <a
                   target="_blank"
@@ -710,7 +710,6 @@
         </section>
         <!-- Portfolio -->
         <!-- Testimonial -->
-
         <section id="#about" class="bg-[#212529]">
           <div class="text-center py-24 mx-20">
             <div class="relative flex justify-center flex-col items-center">
@@ -805,8 +804,139 @@
           </div>
         </section>
         <!-- Testimonial -->
+        <!-- Contact -->
+        <section id="#about" class="bg-[#343a40]">
+          <div class="text-center py-24 w-fu">
+            <div class="relative flex justify-center flex-col items-center">
+              <h2 class="text-9xl uppercase font-bold text-white opacity-5">
+                Contact
+              </h2>
+              <p class="absolute text-5xl mt-7 font-semibold text-white">
+                Get in Touch
+              </p>
+              <span
+                class="w-[100px] h-2 border-[#20c997] -mt-10 border-b-2"
+              ></span>
+            </div>
 
-        <footer></footer>
+            <div
+              class="mt-10 flex gap-7 justify-between items-center mx-20 space-y-10"
+            >
+              <div class="w-[20%] text-left space-y-5">
+                <h2 class="uppercase text-2xl font-semibold text-white">
+                  Address
+                </h2>
+                <p class="font-medium text-lg text-gray-300">
+                  4th Floor, Plot No.22, <br />
+                  145 Murphy Canyon Rd.
+                  <br />
+                  San Diego CA 2028
+                </p>
+                <div class="space-y-3">
+                  <div class="flex justify-start items-center gap-3">
+                    <i class="fas fa-phone text-[#20c997]"></i>
+                    <p class="text-lg font-medium text-white">
+                      (060) 444 434 444
+                    </p>
+                  </div>
+                  <div class="flex justify-start items-center gap-3">
+                    <i class="fas fa-fax text-[#20c997]"></i>
+                    <p class="text-lg font-medium text-white">
+                      (060) 555 545 555
+                    </p>
+                  </div>
+                  <div class="flex justify-start items-center gap-5">
+                    <i class="fas fa-envelope text-[#20c997]"></i>
+                    <p class="text-lg font-medium text-white">
+                      chat@simone.com
+                    </p>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl font-medium text-white uppercase">
+                      Follow Me
+                    </h2>
+                    <ul
+                      class="mt-5 flex items-center justify-start gap-5 text-lg text-gray-300"
+                    >
+                      <li><i class="fab fa-dribbble cursor-pointer"></i></li>
+                      <li><i class="fab fa-twitter cursor-pointer"></i></li>
+                      <li><i class="fab fa-facebook-f cursor-pointer"></i></li>
+                      <li><i class="fab fa-google cursor-pointer"></i></li>
+                      <li><i class="fab fa-github cursor-pointer"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[80%]">
+                <h2
+                  class="text-2xl text-left uppercase font-semibold text-white"
+                >
+                  Send us a note
+                </h2>
+                <form action="" class="w-full">
+                  <div class="flex items-center justify-between w-full mt-6">
+                    <div class="w-[450px] mr-5">
+                      <input
+                        required
+                        type="text"
+                        placeholder="Name"
+                        class="w-full py-3 px-5 font-semibold text-lg text-white focus:outline-none rounded-lg bg-[#232a31]"
+                      />
+                    </div>
+                    <div class="w-[500px]">
+                      <input
+                        required
+                        type="text"
+                        placeholder="Email"
+                        class="w-full py-3 px-5 font-semibold text-lg text-white focus:outline-none rounded-lg bg-[#232a31]"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-5 h-8">
+                    <textarea
+                      required
+                      class="w-full focus:outline-none rounded-xl py-3 px-4 bg-[#232a31] font-semibold text-lg text-white resize-none"
+                      name="message"
+                      rows="5"
+                      placeholder="Tell us more about your needs......."
+                    ></textarea>
+                  </div>
+                  <p
+                    class="mt-44 bg-[#20c997] w-[180px] text-lg font-semibold text-white hover:bg-[#029669] py-3 mx-auto rounded-full cursor-pointer transition"
+                  >
+                    Send Message
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact -->
+        <!-- Footer -->
+        <footer class="bg-[#212529]">
+          <div class="py-10 px-20">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-lg font-medium text-white">
+                  Copyright © 2023
+                  <span class="text-[#20c997]">Mohammad Maruf. </span> All
+                  Rights Reserved.
+                </p>
+              </div>
+              <div>
+                <ul class="flex gap-5 text-lg font-medium text-gray-400">
+                  <li class="cursor-pointer hover:text-white transition">
+                    Terms & Policy
+                  </li>
+                  <li class="cursor-pointer hover:text-white transition">
+                    Disclaimer
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer -->
       </div>
     </div>
   </body>
